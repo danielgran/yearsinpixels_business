@@ -27,3 +27,6 @@ jobs:
     - name: Test with unittest
       run: |
         python -m unittest
+    - name: Build Library
+      run: |
+        python -m build
