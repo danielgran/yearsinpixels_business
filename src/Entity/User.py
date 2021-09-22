@@ -1,3 +1,8 @@
+import uuid
+
+
 class User:
 
-    name = ""
+    username = ""
+    email = ""
+    guid = str(uuid.uuid4())
