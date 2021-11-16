@@ -1,14 +1,27 @@
 import unittest
 
+from src.Entity.Entity import Entity
 from src.Entity.User import User
 
 
 class MyTestCase(unittest.TestCase):
     def test_is_there(self):
-        ent = User()
+        self.assertIsNotNone(User)
+
+    def test_is_entity(self):
+        self.assertTrue(issubclass(User, Entity))
 
     def test_meta(self):
-        ent = User()
-        self.assertTrue(ent.guid is not None)
-        self.assertTrue(ent.email is not None)
-        self.assertTrue(ent.username is not None)
+        user = User()
+        self.assertIsNotNone(user.guid)
+        self.assertIsNotNone(user.email)
+        self.assertIsNotNone(user.email_verified)
+        self.assertIsNotNone(user.name_first)
+        self.assertIsNotNone(user.name_last)
+        self.assertIsNotNone(user.gender)
+        self.assertIsNotNone(user.password)
+        self.assertIsNotNone(user.password_last_update)
+        self.assertIsNotNone(user.enabled)
+        self.assertIsNotNone(user.last_login)
+        self.assertIsNotNone(user.modified)
+        self.assertIsNotNone(user.created)
