@@ -1,7 +1,7 @@
 import unittest
 
-from src.Entity.Entity import Entity
-from src.Entity.User import User
+from yearsinpixels_business.Entity.Entity import Entity
+from yearsinpixels_business.Entity.User import User
 
 
 class MyTestCase(unittest.TestCase):

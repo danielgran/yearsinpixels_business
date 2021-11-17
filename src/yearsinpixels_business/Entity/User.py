@@ -2,7 +2,7 @@ import time
 
 import uuid
 
-from src.Entity.Entity import Entity
+from yearsinpixels_business.Entity.Entity import Entity
 
 
 class User(Entity):
