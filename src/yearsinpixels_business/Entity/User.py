@@ -15,8 +15,8 @@ class User(Entity):
         self.name_last = ""
         self.gender = 0
         self.password = ""
-        self.last_update_password = time.time()
+        self.password_last_update = time.time()
         self.enabled = True
-        self.last_login = ""
+        self.login_last = time.time()
         self.modified = time.time()
         self.created = time.time()
