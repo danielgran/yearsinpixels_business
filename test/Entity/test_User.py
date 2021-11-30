@@ -22,6 +22,7 @@ class MyTestCase(unittest.TestCase):
         self.assertIsNotNone(user.password)
         self.assertIsNotNone(user.password_last_update)
         self.assertIsNotNone(user.enabled)
+        self.assertIsNotNone(user.twofatoken)
         self.assertIsNotNone(user.login_last)
         self.assertIsNotNone(user.modified)
         self.assertIsNotNone(user.created)
