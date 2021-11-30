@@ -13,7 +13,6 @@ class User(Entity):
         self.email_verified = True
         self.name_first = ""
         self.name_last = ""
-        self.gender = 0
         self.password = ""
         self.password_last_update = time.time()
         self.enabled = True

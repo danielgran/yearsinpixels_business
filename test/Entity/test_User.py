@@ -18,7 +18,6 @@ class MyTestCase(unittest.TestCase):
         self.assertIsNotNone(user.email_verified)
         self.assertIsNotNone(user.name_first)
         self.assertIsNotNone(user.name_last)
-        self.assertIsNotNone(user.gender)
         self.assertIsNotNone(user.password)
         self.assertIsNotNone(user.password_last_update)
         self.assertIsNotNone(user.enabled)
