@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 # This file must get called out of the project root
 
 mkdir build

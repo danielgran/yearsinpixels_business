@@ -29,5 +29,6 @@ jobs:
       run: |
         python -m unittest
     - name: Build Library
+      working-directory: .
       run: |
-        python -m build
+        ./scripts/build.sh
