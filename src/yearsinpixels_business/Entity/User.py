@@ -1,3 +1,5 @@
+from datetime import datetime
+
 import time
 
 import uuid
@@ -14,9 +16,9 @@ class User(Entity):
         self.name_first = ""
         self.name_last = ""
         self.password = ""
-        self.password_last_update = time.time()
+        self.password_last_update = datetime.now()
         self.enabled = True
         self.twofatoken = ""
-        self.login_last = time.time()
-        self.modified = time.time()
-        self.created = time.time()
+        self.login_last = datetime.now()
+        self.modified = datetime.now()
+        self.created = datetime.now()
