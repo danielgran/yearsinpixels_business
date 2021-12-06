@@ -14,6 +14,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_meta(self):
         user = User()
+        self.assertIsNotNone(user.id)
         self.assertIsNotNone(user.guid)
         self.assertIsNotNone(user.email)
         self.assertIsNotNone(user.email_verified)
@@ -27,6 +28,7 @@ class MyTestCase(unittest.TestCase):
         self.assertIsNotNone(user.modified)
         self.assertIsNotNone(user.created)
 
+        self.assertTrue(isinstance(user.id, int))
         self.assertTrue(isinstance(user.guid, str))
         self.assertTrue(isinstance(user.email, str))
         self.assertTrue(isinstance(user.email_verified, bool))

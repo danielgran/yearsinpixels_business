@@ -13,10 +13,12 @@ class MyTestCase(unittest.TestCase):
 
     def test_meta(self):
         day = Day()
+        self.assertIsNotNone(day.id_user)
         self.assertIsNotNone(day.date)
         self.assertIsNotNone(day.title)
         self.assertIsNotNone(day.notes)
 
+        self.assertTrue(isinstance(day.id_user, int))
         self.assertTrue(isinstance(day.date, date))
         self.assertTrue(isinstance(day.title, str))
         self.assertTrue(isinstance(day.notes, str))

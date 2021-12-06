@@ -1,7 +1,5 @@
 from datetime import datetime
 
-import time
-
 import uuid
 
 from yearsinpixels_business.Entity.Entity import Entity
@@ -10,6 +8,7 @@ from yearsinpixels_business.Entity.Entity import Entity
 class User(Entity):
 
     def __init__(self):
+        self.id = 0
         self.guid = str(uuid.uuid4())
         self.email = ""
         self.email_verified = True
