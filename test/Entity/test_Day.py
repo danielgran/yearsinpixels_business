@@ -4,6 +4,7 @@ import unittest
 from yearsinpixels_business.Entity.Day import Day
 from yearsinpixels_business.Entity.Entity import Entity
 
+
 class DayTest(unittest.TestCase):
     def test_is_there(self):
         self.assertIsNotNone(Day)

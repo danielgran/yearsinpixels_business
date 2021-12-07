@@ -3,6 +3,7 @@ import unittest
 from yearsinpixels_business.Entity.Mood import Mood
 from yearsinpixels_business.Entity.Entity import Entity
 
+
 class MoodTest(unittest.TestCase):
     def test_is_there(self):
         self.assertIsNotNone(Mood)
