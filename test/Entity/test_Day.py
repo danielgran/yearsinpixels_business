@@ -1,10 +1,10 @@
-from datetime import datetime, date
+from datetime import date
 import unittest
 
 from yearsinpixels_business.Entity.Day import Day
 from yearsinpixels_business.Entity.Entity import Entity
 
-class MyTestCase(unittest.TestCase):
+class DayTest(unittest.TestCase):
     def test_is_there(self):
         self.assertIsNotNone(Day)
 
